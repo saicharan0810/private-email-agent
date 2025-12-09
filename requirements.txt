@@ -1,0 +1,9 @@
+streamlit
+ollama
+pandas
+plotly
+pytesseract
+Pillow
+gTTS
+beautifulsoup4
+lxml
