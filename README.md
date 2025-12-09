@@ -32,3 +32,45 @@ This application connects securely to your Gmail inbox to analyze, summarize, an
 ### 2. Install Dependencies
 ```bash
 pip3 install -r requirements.txt
+
+### 3. Get a Google App Password
+
+To connect securely, you must generate a specific App Password (do not use your main Gmail password):
+
+Go to Google Account > Security.
+
+Enable 2-Step Verification (if not already on).
+
+Search for "App Passwords".
+
+Create a new one named "Email Agent".
+
+Copy the 16-character code.
+
+🏃‍♂️ Running the App
+Navigate to the project directory in your terminal.
+
+Run the Streamlit server:
+streamlit run app.py
+
+
+The app will open in your browser at http://localhost:8501.
+
+Enter your Name, Email, and the App Password to log in.
+
+📈 Usage Guide
+Dashboard: View your inbox with color-coded tags for "Job Applications," "Security Alerts," etc.
+
+Auto-Triage: Click the "✨ Auto-Triage" button to have the AI sort and categorize your emails.
+
+Chat: Use the "Chat with Inbox" feature to ask questions like "Did I get any interview updates today?"
+
+OCR: Enable "Enable Image Scan" in the sidebar settings to read text inside attachments.
+
+Podcast: Click "▶️ Play Audio Summary" in the sidebar for a voice briefing of your top emails.
+
+🤝 Contributing
+Feel free to fork this repository and submit pull requests. Suggestions for new features (e.g., calendar integration, different local models) are welcome!
+
+📜 License
+MIT License
